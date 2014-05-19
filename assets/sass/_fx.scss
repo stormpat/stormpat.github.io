@@ -1,0 +1,33 @@
+@mixin fadedown($a, $b, $c, $d, $e) {
+    0% {
+        opacity: 0;
+        transform: translateY($a);
+    }
+    25% {
+        opacity: 0.25;
+        transform: translateY($b) rotate(20deg);
+    }
+    50% {
+        opacity: 0.50;
+        transform: translateX($c);
+    }
+    75% {
+        opacity: 0.75;
+        transform: translateX($d);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY($e);
+    }
+}
+
+@keyframes bouncefade {
+    @include fadedown(-20px, 20px, 5px, -5px, 0)
+}
+.fade-it-down {
+    animation-name: bouncefade;
+}
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1.2s;
+}

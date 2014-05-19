@@ -1,0 +1,7 @@
+
+@mixin shadow($color) {
+    box-shadow: 0px 20px 30px -20px $color;
+}
+@mixin transition($prop, $time, $method) {
+    transition: $prop $time $method;
+}

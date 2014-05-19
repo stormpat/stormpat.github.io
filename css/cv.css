@@ -1,0 +1,163 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,600");
+body {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 16px;
+  background: #fff; }
+
+header, .footer, .head {
+  text-align: center; }
+
+h1 {
+  font-weight: 600; }
+
+h2, h3 {
+  font-weight: 300; }
+
+h2#name:after {
+  content: " Curriculum vitae"; }
+  @media (max-width: 991px) {
+    h2#name:after {
+      content: " CV"; } }
+
+img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%; }
+
+section {
+  margin: 3em 0; }
+  @media (max-width: 991px) {
+    section {
+      margin: 1em 0; } }
+
+.head {
+  padding: 0em 5em; }
+  @media (max-width: 991px) {
+    .head {
+      padding: 0 0.2em; } }
+
+.fa {
+  font-size: 1.5em; }
+
+.nav {
+  margin-top: 1em; }
+  @media (max-width: 991px) {
+    .nav {
+      display: inline-block; } }
+
+.lead {
+  padding: 0 0 3em; }
+  @media (max-width: 991px) {
+    .lead {
+      font-size: 1.125em; } }
+
+.panel {
+  -webkit-box-shadow: 0px 20px 30px -20px #ccc;
+  box-shadow: 0px 20px 30px -20px #ccc; }
+
+.panel-default .panel-heading {
+  background: transparent;
+  font-weight: 600; }
+
+.keywords {
+  color: #3a87ad;
+  font-size: 0.8em; }
+
+.nav-pills li {
+  float: right; }
+
+@-webkit-keyframes bouncefade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+
+  25% {
+    opacity: 0.25;
+    -webkit-transform: translateY(20px) rotate(20deg);
+    transform: translateY(20px) rotate(20deg); }
+
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+
+  75% {
+    opacity: 0.75;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@-o-keyframes bouncefade {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+
+  25% {
+    opacity: 0.25;
+    -o-transform: translateY(20px) rotate(20deg);
+    transform: translateY(20px) rotate(20deg); }
+
+  50% {
+    opacity: 0.5;
+    -o-transform: translateX(5px);
+    transform: translateX(5px); }
+
+  75% {
+    opacity: 0.75;
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes bouncefade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
+
+  25% {
+    opacity: 0.25;
+    -webkit-transform: translateY(20px) rotate(20deg);
+    -o-transform: translateY(20px) rotate(20deg);
+    transform: translateY(20px) rotate(20deg); }
+
+  50% {
+    opacity: 0.5;
+    -webkit-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px); }
+
+  75% {
+    opacity: 0.75;
+    -webkit-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+
+.fade-it-down {
+  -webkit-animation-name: bouncefade;
+  -o-animation-name: bouncefade;
+  animation-name: bouncefade; }
+
+.animated {
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  animation-duration: 1.2s; }
